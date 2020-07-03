@@ -1,0 +1,29 @@
+
+
+    
+    <div class="form-group">
+        <button  (click)="new()" class="addbutton" >
+            Create new game
+        </button>
+
+    </div>
+    <div class='table'>
+        <table >
+            <thead class="theadTable">
+              <tr class="trTable" align="center">
+                <th>Game </th>
+                <th>Action </th>
+               
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="game.id" *ngFor="let game of games; let i =index " align="center">
+                <td   >{{game.player1}}</td>
+                
+                
+                <td > <button (click)="join(game.id)"  >Join</button>               </td>
+
+              </tr>
+            </tbody>
+          </table>
+    </div>

@@ -1,0 +1,87 @@
+.dotsboxes{
+    padding-left: 20%;
+    
+   
+     
+}
+
+
+
+
+
+
+
+.l1{
+    stroke:rgb(250, 252, 250);
+    stroke-width:4;
+    stroke-dasharray: 0; 
+   /* cursor: not-allowed;*/
+    pointer-events: all; 
+    
+}
+
+.checkedp2{
+    stroke:rgb(163, 29, 29);
+    stroke-width:4;
+    stroke-dasharray: 0; 
+    pointer-events:all;
+    
+    
+}
+
+.checkedp1{
+    stroke:rgb(28, 11, 104);
+    stroke-width:4;
+    stroke-dasharray: 0; 
+    pointer-events:all;
+    
+    
+}
+ .l1:hover{
+    stroke:rgb(42, 33, 170);
+    stroke-width:4;
+    stroke-dasharray: 10; 
+    pointer-events:all;
+
+}
+
+.l1:active{
+    stroke:rgb(23, 5, 75);
+    stroke-width:4;
+    stroke-dasharray: 0;
+    pointer-events:all;
+
+}
+
+.p{
+    fill:green;
+    display: none;
+    pointer-events:all;
+}
+
+
+.p1{
+    fill:rgb(19, 0, 128);
+    pointer-events:all;
+    display: block;
+}
+.p2{
+    fill:rgb(184, 49, 8);
+    pointer-events:all;
+    display: block;
+}
+
+.first{
+    text-align: left;
+    display:inline-block;
+    width:50%;
+}
+
+.last{
+text-align: right;
+display:inline-block
+
+}
+.title{
+    padding:5%;
+}

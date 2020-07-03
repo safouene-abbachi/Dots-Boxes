@@ -1,0 +1,72 @@
+.title{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  margin: 1em;
+  color:rgba(5, 144, 151, 0.6);
+  background-color:rgba(205, 228, 211, 0.884);
+}
+
+.title h1{
+  /* padding-left:20%;*/
+    text-align:center;
+    font-weight: bold;
+    font-size: 0.8cm;
+}
+
+.body{
+    
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs8eUS6E2WxJK3wbDHyoJSkfUj67x2gFt42QRrKqKvBgxzoKqp&s');
+   
+    width:100%;
+    height: 6cm;
+}
+
+
+
+
+
+
+label{
+    color: #B4886B;
+font-weight: bold;
+display: block;
+width: 150px;
+float: left;
+font-weight: bold;
+font-size: 0.8cm;
+}
+
+.accueil-haut
+{
+   margin: -10px;
+    display: inline-block;
+}
+
+.btn {
+    /* Safari */
+    
+    width: 3cm;
+    height: 1.5cm;
+  
+    
+    font-weight: bold;
+    font-size: 0.8cm;
+    margin-top: 0px;
+    background-color: rgb(122, 224, 122); /* Green */
+    color: rgb(219, 233, 222);
+
+  }
+
+  .input{left:2cm;
+    width: 5cm;
+height: 1.2cm;
+    font-weight: bold;
+    font-size: 0.5cm;
+  }
+  
+  .btn:hover {
+    background-color: #4CAF50; /* Green */
+    color: rgb(48, 73, 54);
+    width: 3cm;
+    height: 1.5cm;
+  }

@@ -1,0 +1,105 @@
+
+ 
+   <div class="title">
+          <div class="first">  
+            
+              <h5 style="color:rgb(28, 11, 104)" >Player1 :{{game.player1}}</h5>
+              <h6>score:{{game.scorep1}}</h6>
+
+            
+          </div>
+
+  
+          <div class="last">
+            <h5 style="color:rgb(163, 29, 29)" >Player2: {{game.player2}}</h5>
+            <h6 >score:{{game.scorep2}}</h6>
+                
+          </div>
+
+    </div>
+<div class="dotsboxes"  >
+<svg  width="1000" height="300" position='center' xmlns="http://www.w3.org/2000/svg">
+  
+  <!--  <path d="M 10 10 h 80 v 80 h -80 Z" fill="transparent" stroke="black"/> -->
+  <line id="1" class="l1" x1="10" y1="10" x2="10" y2="90" (click)="getLine($event)" />
+  <line id="2"  class="l1" x1="10" y1="90" x2="90" y2="90" (click)="getLine($event)" />
+  <line id="3" class="l1" x1="90" y1="10" x2="90" y2="90" (click)="getLine($event)" />
+  <line id="4"  class="l1" x1="10" y1="10" x2="90" y2="10" (click)="getLine($event)" />
+
+  <line id="5" class="l1" x1="10" y1="90" x2="10" y2="170" (click)="getLine($event)" />
+  <line id="6"  class="l1" x1="10" y1="170" x2="90" y2="170" (click)="getLine($event)"/>
+  <line id="7"  class="l1" x1="90" y1="90" x2="90" y2="170" (click)="getLine($event)" />
+
+  <line id="8" class="l1" x1="10" y1="170" x2="10" y2="250" (click)="getLine($event)"  />
+  <line id="9"  class="l1" x1="10" y1="250" x2="90" y2="250" (click)="getLine($event)" />
+  <line id="10" class="l1" x1="170" y1="170" x2="170" y2="250" (click)="getLine($event)"/>
+  <line id="11"  class="l1" x1="90" y1="170" x2="90" y2="250"  (click)="getLine($event)" />
+
+  <line id="12" class="l1" x1="170" y1="10" x2="170" y2="90" (click)="getLine($event)" />
+  <line id="13"  class="l1" x1="90" y1="90" x2="170" y2="90" (click)="getLine($event)"  />
+  <line id="14" class="l1" x1="170" y1="90" x2="170" y2="170" (click)="getLine($event)"/>
+  <line id="15" class="l1" x1="90" y1="170" x2="170" y2="170" (click)="getLine($event)"/>
+  
+  <line id="16" class="l1" x1="170" y1="10" x2="250" y2="10" (click)="getLine($event)"  />
+  
+  <line id="18" class="l1" x1="170" y1="170" x2="250" y2="170" (click)="getLine($event)" />
+
+<line class="l1" id="19"  x1="170" y1="90" x2="250" y2="90" (click)="getLine($event)" />
+<line class="l1" id="20"  x1="250" y1="10" x2="250" y2="90" (click)="getLine($event)" />
+<line class="l1" id="21" x1="250" y1="90" x2="250" y2="170" (click)="getLine($event)" />
+
+<line class="l1" id="22" x1="250" y1="170" x2="250" y2="250" (click)="getLine($event)" />
+<line class="l1" id="23" x1="170" y1="250" x2="250" y2="250" (click)="getLine($event)" />
+
+  <line class="l1" id="24" x1="90" y1="10" x2="170" y2="10" (click)="getLine($event)" />
+  <line id="25"  class="l1" x1="90" y1="250" x2="170" y2="250" (click)="getLine($event)" />
+    <!-- Points -->
+    <circle cx="10" cy="10" r="8" fill="bleu"/>
+    <circle cx="90" cy="90" r="8" fill="bleu"/>
+    <circle cx="170" cy="170" r="8" fill="bleu"/>
+    <circle cx="250" cy="250" r="8" fill="bleu"/>
+
+
+    <circle cx="90" cy="10" r="8" fill="bleu"/>
+    <circle cx="90" cy="170" r="8" fill="bleu"/>
+    <circle cx="90" cy="250" r="8" fill="bleu"/>
+
+    <circle cx="10" cy="90" r="8" fill="bleu"/>    
+    <circle cx="10" cy="170" r="8" fill="bleu"/>
+    <circle cx="10" cy="250" r="8" fill="bleu"/>
+
+    <circle cx="170" cy="10" r="8" fill="bleu"/>
+    <circle cx="170" cy="90" r="8" fill="bleu"/>
+    <circle cx="170" cy="250" r="8" fill="bleu"/>
+
+    <circle cx="250" cy="10" r="8" fill="bleu"/>
+    <circle cx="250" cy="90" r="8" fill="bleu"/>
+    <circle cx="250" cy="170" r="8" fill="bleu"/>
+
+       <!--  players mark-->
+    <text id="4050" x="40" y="50" fill="bleu" class="p">xxx</text>
+    <text id="40130"  x="40" y="130"  class="p">xxx</text>
+    <text id="40210" x="40" y="210"  class="p">xxx</text>
+
+    <text id="12050" x="120" y="50"  class="p">xxx</text>
+    <text id="120130" x="120" y="130"  class="p">xxx</text>
+    <text id="120210" x="120" y="210"  class="p">xxx</text>
+
+
+    <text id="20050" x="200" y="50"  class="p">xxx</text>    
+    <text id="200130" x="200" y="130"  class="p">xxx</text>    
+    <text id="200210" x="200" y="210"  class="p">xxx</text>
+
+ 
+
+  
+  </svg>
+
+ 
+
+    <h1> Turn :{{game.turn}}</h1>
+ 
+</div>
+
+
+
